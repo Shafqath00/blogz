@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogpost</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5347899d0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <%- include('add-file/partials/header.ejs') %>
+  <div class="main-contents" id="home">
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+          
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/car.jpg" class="bd-placeholder-img card-img-top" alt="Descriptive Text" width="100%" height="225">
+              <div class="card-body">
+                <p class="card-text">A car is a motor vehicle with wheels. Most definitions of cars state that they run primarily on roads, have four wheels, and mainly transport people over cargo.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="/car" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                    </form>
+                    <!-- <form action="/delete" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
+                    </form> -->
+                    
+                  </div>
+                  
+                  <small class="text-body-secondary"><%= Math.floor(Math.random()*60)+1 %>mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/book.jpg" class="bd-placeholder-img card-img-top" alt="Descriptive Text" width="100%" height="225">
+              <div class="card-body">
+                <p class="card-text">A book is a medium for recording information in the form of writing or images.composed of many pages that are bound together and protected by a cover.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="/Book" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                      <!-- <button type="submit" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      <!-- <button type="button">View</button> -->
+                    </form>
+                    <!-- <form action="/delete-2" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
+                    </form> -->
+                  </div>
+                  <small class="text-body-secondary"><%= Math.floor(Math.random()*60)+1 %>mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/india.svg" class="bd-placeholder-img card-img-top" alt="Descriptive Text" width="100%" height="225">              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="/India" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                      <!-- <button type="submit" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      <!-- <button type="button">View</button> -->
+                    </form>
+                    <!-- <form action="/delete-3" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
+                    </form> -->
+                  </div>
+                  <small class="text-body-secondary"><%= Math.floor(Math.random()*60)+1 %>mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/airplane.jpg" class="bd-placeholder-img card-img-top" alt="Descriptive Text" width="100%" height="225">              <div class="card-body">
+                <p class="card-text">An airplane  or aeroplane, informally plane, is a fixed-wing aircraft that is propelled forward by thrust from a jet engine, propeller, or rocket engine.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="/Airplane" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                      <!-- <button type="submit" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      <!-- <button type="button">View</button> -->
+                    </form>
+                    <!-- <form action="/delete-4" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
+                    </form> -->
+                  </div>
+                  <small class="text-body-secondary"><%=Math.floor(Math.random()*60)+1%>mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/elon-2.webp" class="bd-placeholder-img card-img-top" alt="Descriptive Text" width="100%" height="225">              <div class="card-body">
+                <p class="card-text">Elon Reeve Musk is a businessman known for his key roles in the space company SpaceX and the automotive company Tesla.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="/Elon_Musk" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                      <!-- <button type="submit" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      <!-- <button type="button">View</button> -->
+                    </form>
+                    <!-- <form action="/delete-5" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
+                    </form> -->
+                  </div>
+                  <small class="text-body-secondary"><%=Math.floor(Math.random()*60)+1%>mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" >
+            <div class="card shadow-sm">
+              <img src="images/app.jpg" class="bd-placeholder-img card-img-top" alt="Descriptive Text" width="200px" height="225">              <div class="card-body">
+                <p class="card-text">Apple Inc. is an American multinational corporation .Founded in 1976 as Apple Computer Company by Steve Jobs the following year.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="/Apple" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                      <!-- <button type="submit" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      <!-- <button type="button">View</button> -->
+                    </form>
+                    <!-- <form action="/delete-6" method="post">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
+                    </form> -->
+                  </div>
+                  <small class="text-body-secondary"><%= Math.floor(Math.random()*60)+1 %>mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <%- include('add-file/partials/footer.ejs') %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
